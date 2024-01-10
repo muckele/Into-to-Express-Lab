@@ -15,11 +15,11 @@ app.set('view engine', 'ejs')
 
 //mount routes
 
+// app.get('/', function(req, res) {
+//   res.send('<h1>Hello Matt</h1>')
+// })
 app.get('/', function(req, res) {
-  res.send('<h1>Hello Matt</h1>')
-})
-app.get('/', function(req, res) {
-  res.redirect('/students/index')
+  res.redirect('/students')
 })
 app.get('/students', function(req, res) {
   res.render('students/index', {
